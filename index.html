@@ -4,6 +4,71 @@
   <meta charset="UTF-8">
   <title>Malla Interactiva - Ing. Civil en Biotecnología</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Roboto, sans-serif;
+      background-color: #fdfdf8;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    #malla {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 20px;
+    }
+
+    .semestre {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      min-width: 250px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .semestre h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .ramo {
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      position: relative;
+      transition: background-color 0.3s;
+    }
+
+    .ramo .codigo {
+      font-size: 0.8em;
+      color: #444;
+      display: block;
+      margin-top: 5px;
+    }
+
+    .aprobado {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+
+    .bloqueado {
+      pointer-events: none;
+      background-color: #eee !important;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
   <h1>Ingeniería Civil en Biotecnología - Malla Interactiva</h1>
@@ -11,3 +76,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
